@@ -1,7 +1,7 @@
 services:
   web:
-    image: nginx 
-    container_name: portfolioTemplate
+    image: nginx
+    container_name: portfoliopage
     volumes:
       - ./page:/usr/share/nginx/html 
     ports:
