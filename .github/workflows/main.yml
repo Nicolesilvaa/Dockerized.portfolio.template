@@ -8,12 +8,12 @@ on:
 jobs:
 
   CI:
-    run-ons: debian-latest
+    runs-on: debian-latest
 
     steps: 
     
     #Copia todos os arquivos do repositório para o executor da pipeline
-      - uses: actions/chekout@3.1.0 
+      - uses: actions/chekout@3
 
       #Login no docker hub
       - name: Docker Login
@@ -28,6 +28,7 @@ jobs:
           context: .
           file: .
           push: true
+          
           #Nomes das imagens docker
           tags: |
             nilewa/portifolio_template:1.0
