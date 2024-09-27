@@ -14,7 +14,6 @@ Este projeto é um template genérico de portfólio responsivo, inspirado no [Ow
 - **DevOps:**
   - GitHub Actions
   - Docker
-- **Outras Ferramentas:**
   - Git
   - Docker Compose
 
