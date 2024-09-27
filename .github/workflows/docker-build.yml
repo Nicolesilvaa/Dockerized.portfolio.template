@@ -23,3 +23,6 @@ jobs:
         uses: docker/build-push-action@v2  # Usa a ação do Docker para construir e enviar a imagem
         with:  
           context: .  
+          file: Dockerfile
+          push: true
+          tags: nilewa/nginx-webserver:latest
