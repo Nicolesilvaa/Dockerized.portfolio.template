@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v1  
         with:  # Passa os parâmetros para a ação
           username: ${{ secrets.USER }}  # Nome de usuário do Docker Hub armazenado em segredos
-          password: ${{ secrets.PASSWORD }}  # Senha do Docker Hub armazenada em segredos
+          password: ${{ secrets.PASSWD }}  # Senha do Docker Hub armazenada em segredos
 
       - name: Build and push Docker image  
         uses: docker/build-push-action@v2  # Usa a ação do Docker para construir e enviar a imagem
