@@ -1,9 +1,20 @@
+
 services:
-  web:
-    image: nginx
+
+  webserver:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
     container_name: portfoliopage
-    volumes:
-      - ./page:/usr/share/nginx/html 
     ports:
       - "8080:80"
-    
+    volumes:
+      - ./:/usr/share/nginx/html
+    networks:
+      - webnet 
+
+networks:
+  webnet:
+    driver: bridge
