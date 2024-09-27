@@ -1,12 +1,9 @@
-name: Tamplate Portfolio
-version: '1'
-
 services:
   web:
-    image: nginx:latest
+    image: nginx 
     container_name: portfolioTemplate
     volumes:
-      - ./:/usr/share/nginx/html 
+      - ./page:/usr/share/nginx/html 
     ports:
-      - "80:80"
+      - "8080:80"
     
