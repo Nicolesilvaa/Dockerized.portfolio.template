@@ -113,8 +113,7 @@ background-color: var(--body-color);
 }
 
 .about__image {
-flex: 1; /* Garante que a imagem ocupe a metade do espaço */
-max-width: 400px; /* Limita o tamanho da imagem */
+flex: 0.2; /* Garante que a imagem ocupe a metade do espaço */
 }
 
 .about__text {
