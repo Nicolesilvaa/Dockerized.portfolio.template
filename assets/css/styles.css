@@ -101,6 +101,11 @@ body {
   color: var(--title-color);
   margin-bottom: var(--mb-1);
 }
+.section-divider {
+  height: 20rem; /* Altura da "divisão" */
+  background-color: var(--body-color); /* Cor de fundo neutra para separação */
+  border-top: 1px solid var(--scroll-bar-color); /* Linha para marcar a separação */
+}
 
 /* About Section */
 .about {
